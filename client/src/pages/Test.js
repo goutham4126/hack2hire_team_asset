@@ -45,7 +45,7 @@ export default function Page() {
   return (
     <div>
       <h2>{data ? data.message : "Loading test endpoint..."}</h2>
-
+      <p>Total todos fetched: {todos.length}</p>
       <div>
         {completedCount !== null ? (
           <p>Completed todos count: {completedCount}</p>
