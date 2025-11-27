@@ -65,7 +65,7 @@ function Create() {
           </div>
           <div className="mb-5">
             <label htmlFor="image" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Name of the product
+              Image
             </label>
             <input
               name="image"

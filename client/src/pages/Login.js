@@ -71,7 +71,7 @@ function Login() {
           Submit
         </button>
       </form>
-      <div class="mt-5 text-center"> <p class="text-sm text-gray-500 dark:text-gray-400"> Don't have an account? <a href="/register" class="text-blue-600 hover:underline dark:text-blue-500">Register here</a> </p> </div>
+      <div className="mt-5 text-center"> <p className="text-sm text-gray-500 dark:text-gray-400"> Don't have an account? <a href="/register" className="text-blue-600 hover:underline dark:text-blue-500">Register here</a> </p> </div>
     </div>
   );
 }
