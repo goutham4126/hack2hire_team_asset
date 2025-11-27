@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProductDetails from "./pages/ProductDetails";
 import Footer from './components/Footer';
+import Test from './pages/Test';
 
 function PrivateRoute({ children }) {
   const isPresent = localStorage.getItem("token");
@@ -29,6 +30,13 @@ function App() {
           element={
             <PrivateRoute>
               <Create />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/test"
+          element={
+            <PrivateRoute>
+              <Test/>
             </PrivateRoute>
           }
         />
