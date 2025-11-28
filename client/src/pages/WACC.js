@@ -332,7 +332,7 @@ export default function WACCCalculator() {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen">
+    <div className="w-full max-w-6xl mx-auto min-h-screen">
       <div className="bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Optimal WACC Calculator</h2>
 

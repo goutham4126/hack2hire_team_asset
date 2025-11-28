@@ -8,7 +8,8 @@ import Register from "./pages/Register";
 import ProductDetails from "./pages/ProductDetails";
 import Footer from './components/Footer';
 import Test from './pages/Test';
-import StockChart from './pages/StockChart';
+import MDD from './pages/MDD';
+import WACCCalculator from './pages/WACC';
 
 function PrivateRoute({ children }) {
   const isPresent = localStorage.getItem("token");
@@ -41,10 +42,17 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="/stocks"
+        <Route path="/wacc"
           element={
             <PrivateRoute>
-              <StockChart/>
+              <WACCCalculator/>
+            </PrivateRoute>
+          }
+        />
+        <Route path="/mdd"
+          element={
+            <PrivateRoute>
+              <MDD/>
             </PrivateRoute>
           }
         />
