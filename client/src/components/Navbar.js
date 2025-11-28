@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import Translator from "./Translator";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -29,7 +28,6 @@ function Navbar() {
           >
             Logout
           </button>
-          <Translator/>
         </div>
       ) : (
         <a href="/login" className="ml-6">Login</a>

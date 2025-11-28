@@ -5,16 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import VoiceClientWrapper from './components/VoiceClientWrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-        <VoiceClientWrapper>
           <App />
           <Toaster/>
-        </VoiceClientWrapper>
       </BrowserRouter>
   </React.StrictMode>
 );
