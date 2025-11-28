@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import Translator from "./Translator";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -19,15 +20,16 @@ function Navbar() {
         </a>
       </div>
       {isPresent ? (
-        <div>
-          <a href="/" className="mr-6">Home</a>
+        <div className="flex items-center gap-6 mr-10">
+          <a href="/">Home</a>
           <a href="/create">Create</a>
           <button
             onClick={handleLogout}
-            className="ml-6 bg-white text-red-600 px-3 py-1 rounded hover:bg-gray-200"
+            className="bg-white text-red-600 px-3 py-1 rounded hover:bg-gray-200"
           >
             Logout
           </button>
+          <Translator/>
         </div>
       ) : (
         <a href="/login" className="ml-6">Login</a>

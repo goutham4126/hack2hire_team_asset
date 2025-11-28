@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import ProductDetails from "./pages/ProductDetails";
 import Footer from './components/Footer';
 import Test from './pages/Test';
+import StockChart from './pages/StockChart';
 
 function PrivateRoute({ children }) {
   const isPresent = localStorage.getItem("token");
@@ -37,6 +38,13 @@ function App() {
           element={
             <PrivateRoute>
               <Test/>
+            </PrivateRoute>
+          }
+        />
+        <Route path="/stocks"
+          element={
+            <PrivateRoute>
+              <StockChart/>
             </PrivateRoute>
           }
         />
